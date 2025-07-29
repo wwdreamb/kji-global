@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KJ Industries</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KJI Global</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2em 0;
+
+    .container {
+      max-width: 800px;
+      padding: 40px;
+      border: 1px solid #1a1a1a;
+      background-color: #121212;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
     }
-    section {
-      margin: 2em;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      color: #f0f0f0;
+      letter-spacing: 1px;
     }
-    footer {
-      background: #34495e;
-      color: white;
-      padding: 1em 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+
+    p {
+      font-size: 1.2em;
+      color: #aaaaaa;
+    }
+
+    .subtle {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>KJ Industries</h1>
-    <p>Scalable solutions for technical workflows and entrepreneurial ventures</p>
-  </header>
-
-  <section>
-    <h2>Welcome to KJ Industries</h2>
-    <p>Innovating with precision and privacy in mind. From BIM/CIM modeling to user-focused digital strategies, we're building smarter workflows for the future.</p>
-  </section>
-
-  <footer>
-    &copy; 2025 KJ Industries — All rights reserved
-  </footer>
+  <div class="container">
+    <h1>KJI Global</h1>
+    <p>Discretion. Precision. Results.</p>
+    <div class="subtle">Inquiries by referral only</div>
+  </div>
 </body>
 </html>
