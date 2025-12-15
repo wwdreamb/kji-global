@@ -15,9 +15,7 @@
       --border: #e2e5e9;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -32,23 +30,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 28px;
     }
 
     .container {
       width: 100%;
-      max-width: 900px;
-      padding: 60px 70px;
+      max-width: 920px;
+      padding: 64px 72px;
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 12px;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
     }
 
     .accent-bar {
-      width: 60px;
+      width: 64px;
       height: 4px;
       background-color: var(--accent);
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       border-radius: 2px;
     }
 
@@ -57,29 +56,50 @@
       font-size: 2.6rem;
       font-weight: 600;
       letter-spacing: 0.4px;
+      line-height: 1.15;
     }
 
     .tagline {
-      margin-top: 12px;
-      font-size: 1.15rem;
+      margin-top: 10px;
+      font-size: 1.1rem;
       color: var(--text-muted);
+      line-height: 1.4;
     }
 
     .divider {
-      margin: 40px 0;
+      margin: 34px 0;
       height: 1px;
       background-color: var(--border);
     }
 
-    .description {
+    .section-title {
+      margin: 0 0 12px 0;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .copy {
       font-size: 1.05rem;
-      line-height: 1.65;
-      color: #333;
-      max-width: 760px;
+      line-height: 1.75;
+      color: #2b2b2b;
+      max-width: 820px;
+    }
+
+    .copy p {
+      margin: 0 0 16px 0;
+    }
+
+    .copy p:last-child {
+      margin-bottom: 0;
     }
 
     .footer {
-      margin-top: 50px;
+      margin-top: 46px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
       font-size: 0.85rem;
       color: var(--text-muted);
       display: flex;
@@ -88,25 +108,15 @@
       gap: 10px;
     }
 
-    @media (max-width: 700px) {
-      .container {
-        padding: 40px 30px;
-      }
-
-      h1 {
-        font-size: 2.1rem;
-      }
-
-      .footer {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    @media (max-width: 760px) {
+      .container { padding: 42px 30px; }
+      h1 { font-size: 2.1rem; }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
     <div class="accent-bar"></div>
 
     <h1>KJI Global</h1>
@@ -114,21 +124,28 @@
 
     <div class="divider"></div>
 
-    <div class="description">
-      KJI Global is a privately held firm operating across multiple industries,
-      focused on delivering systems that function as keystone elements within
-      complex operational environments. Our work is grounded in deep domain
-      knowledge and disciplined judgment, applied through structured processes
-      designed for reliability, control, and long-term continuity.
-      <br /><br />
-      We engage selectively and measure success by outcomes that remain stable,
-      defensible, and sustainable over time.
+    <h2 class="section-title">About</h2>
+    <div class="copy">
+      <p>
+        KJI Global is a privately held firm operating across multiple industries, focused on delivering
+        systems that function as keystone elements within complex operational environments. Our work is
+        grounded in deep domain knowledge and disciplined judgment, applied through structured processes
+        designed for reliability, control, and long-term continuity.
+      </p>
+      <p>
+        KJI Global operates across a range of enterprise and engineering-focused domains, supporting the design,
+        operation, and sustainment of complex systems. Our work spans enterprise platforms, engineering and design
+        technologies, operational process optimization, and data governance environments. We routinely support
+        decision-support functions, regulatory and standards-aligned workflows, and advanced analytical methods where
+        rigor, traceability, and reliability are required. Engagements are structured to integrate cleanly within
+        existing organizational frameworks and to support long-term operational continuity.
+      </p>
     </div>
 
     <div class="footer">
       <div>© 2025 KJI Global</div>
       <div>Engagements conducted under defined scopes</div>
     </div>
-  </div>
+  </main>
 </body>
 </html>
