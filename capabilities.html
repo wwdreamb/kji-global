@@ -26,6 +26,43 @@
       color: var(--text-main);
     }
 
+    /* NAV */
+    .nav {
+      width: 100%;
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 14px 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links a {
+      margin-left: 26px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: var(--text-muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
     body {
       display: flex;
       justify-content: center;
@@ -41,6 +78,7 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+      margin-top: 80px;
     }
 
     .accent-bar {
@@ -62,7 +100,6 @@
       margin-top: 10px;
       font-size: 1.05rem;
       color: var(--text-muted);
-      line-height: 1.4;
     }
 
     .divider {
@@ -78,31 +115,6 @@
       max-width: 820px;
     }
 
-    .copy p {
-      margin: 0 0 18px 0;
-    }
-
-    .copy p:last-child {
-      margin-bottom: 0;
-    }
-
-    .capability-block {
-      margin-top: 28px;
-    }
-
-    .capability-title {
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 6px;
-      color: #1f1f1f;
-    }
-
-    .capability-text {
-      font-size: 0.98rem;
-      line-height: 1.6;
-      color: #3a3a3a;
-    }
-
     .footer {
       margin-top: 46px;
       padding-top: 18px;
@@ -116,6 +128,7 @@
     }
 
     @media (max-width: 760px) {
+      .nav-inner { padding: 14px 30px; }
       .container { padding: 42px 30px; }
       h1 { font-size: 2.0rem; }
     }
@@ -123,6 +136,17 @@
 </head>
 
 <body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">KJI Global</div>
+      <div class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="capabilities.html">Capabilities</a>
+      </div>
+    </div>
+  </nav>
+
   <main class="container">
     <div class="accent-bar"></div>
 
@@ -134,67 +158,16 @@
     <div class="divider"></div>
 
     <div class="copy">
-      <p>
-        KJI Global supports organizations operating in regulated, technical, and enterprise environments.
-        Our capabilities are structured to integrate within existing systems, processes, and governance
-        frameworks, emphasizing durability, clarity, and operational continuity.
-      </p>
-
-      <div class="capability-block">
-        <div class="capability-title">Enterprise Systems & Platforms</div>
-        <div class="capability-text">
-          Support for internally operated systems and platforms, with emphasis on stability,
-          integration, and long-term maintainability.
-        </div>
-      </div>
-
-      <div class="capability-block">
-        <div class="capability-title">Engineering & Design Technologies</div>
-        <div class="capability-text">
-          Capabilities supporting technical design, engineering workflows, and standards-driven
-          production environments.
-        </div>
-      </div>
-
-      <div class="capability-block">
-        <div class="capability-title">Operational Process Optimization</div>
-        <div class="capability-text">
-          Structured improvements to reduce friction, improve consistency, and support repeatable
-          execution across operational processes.
-        </div>
-      </div>
-
-      <div class="capability-block">
-        <div class="capability-title">Data Governance & Reporting</div>
-        <div class="capability-text">
-          Support for structured data handling, validation, traceability, and reporting within
-          controlled environments.
-        </div>
-      </div>
-
-      <div class="capability-block">
-        <div class="capability-title">Decision Support Systems</div>
-        <div class="capability-text">
-          Systems and workflows designed to improve decision quality, consistency, and transparency
-          across operational domains.
-        </div>
-      </div>
-
-      <div class="capability-block">
-        <div class="capability-title">Regulatory & Standards Alignment</div>
-        <div class="capability-text">
-          Alignment of tools and processes with formal standards, specifications, and compliance-driven
-          operational requirements.
-        </div>
-      </div>
-
-      <div class="capability-block">
-        <div class="capability-title">Advanced Analytical Methods</div>
-        <div class="capability-text">
-          Application of analytical techniques in support of evaluation, forecasting, and structured
-          assessment, applied where rigor and traceability are required.
-        </div>
-      </div>
+      KJI Global supports organizations operating in regulated, technical, and
+      enterprise environments. Our capabilities integrate within existing
+      systems, processes, and governance frameworks, emphasizing durability,
+      clarity, and operational continuity.
+      <br /><br />
+      Our work spans enterprise systems, engineering and design technologies,
+      operational process optimization, data governance and reporting,
+      decision-support functions, regulatory and standards alignment, and
+      advanced analytical methods applied where rigor and traceability are
+      required.
     </div>
 
     <div class="footer">
@@ -202,5 +175,6 @@
       <div>Capabilities subject to engagement scope</div>
     </div>
   </main>
+
 </body>
 </html>
